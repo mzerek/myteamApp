@@ -9,7 +9,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<myfaces-version>2.1.12</myfaces-version>
-		<primefaces-version>3.5</primefaces-version>
+		<primefaces-version>4.0</primefaces-version>
 		<spring-version>4.0.9.RELEASE</spring-version>
 		<hibernate-version>4.3.8.Final</hibernate-version>
 	</properties>
@@ -110,5 +110,15 @@
 	</dependencies>
 	<build>
 		<finalName>myteam</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>
